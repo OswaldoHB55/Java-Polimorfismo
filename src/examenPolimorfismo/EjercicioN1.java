@@ -20,6 +20,9 @@ public class EjercicioN1 {
              opc = entrada.nextLine().charAt(0);
             if(opc == 'f'){
                 System.out.print("*Informacion del Futbolista*********** \n");
+                System.out.println("Escriba el Id");
+                futbolista.setId(entrada.nextInt());
+                entrada.nextLine();
                 System.out.print("Escriba el Nombre:");
                 futbolista.setNombre(entrada.nextLine());
                 System.out.print("Escriba el Apellido:");
@@ -41,6 +44,9 @@ public class EjercicioN1 {
 
             }if(opc == 'e'){
                 System.out.print("Informacion del Entrenador¨************** \n");
+                System.out.println("Escriba el Id");
+                entrenador.setId(entrada.nextInt());
+                entrada.nextLine();
                 System.out.print("Escriba el Nombre:");
                 entrenador.setNombre(entrada.nextLine());
                 System.out.print("Escriba el Apellido:");
@@ -60,6 +66,9 @@ public class EjercicioN1 {
 
             }if (opc == 'm'){
                 System.out.print("*Informacion del Masajista************* \n");
+                System.out.println("Escriba el Id");
+                masajista.setId(entrada.nextInt());
+                entrada.nextLine();
                 System.out.print("Escriba el Nombre:");
                 masajista.setNombre(entrada.nextLine());
                 System.out.print("Escriba el Apellido:");
@@ -103,6 +112,12 @@ class SuperClase{
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.edad = edad;
+    }
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
     }
     public String getNombres() {
         return nombres;
